@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/Sec/Pentest/Web_Operation/Web_Penetration/Info_Gathering/JsScan/JS-Analyser/" "~/.rustup/toolchains/stable-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/" "~/Sec/Code/Rust/Tcp_Manager/" "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.48.0/" "~/sec/Code/Rust/Tcp_Manager/" "~/Sec/PentestScript/webtools/Dict_Payload/fuzzDicts/")

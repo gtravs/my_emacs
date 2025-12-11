@@ -1,0 +1,3 @@
+* Default
+** lisp
+ - path :: ~/.emacs.d/lisp

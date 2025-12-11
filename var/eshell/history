@@ -1,0 +1,19 @@
+cd Sec/Pentest/Web_Operation/Web_Penetration/Info_Gathering/JsScan/JS-Analyser 
+python3 app.py 
+exit
+exit
+exit
+ls 
+exit
+exit
+exit
+ifconfig
+ls 
+exit
+pwd 
+git 
+ls 
+vim 
+exit
+exit
+exit
