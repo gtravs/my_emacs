@@ -17,3 +17,57 @@ vim
 exit
 exit
 exit
+ifconfig
+cd ..
+ls 
+rm -rf emacs_profile.zip 
+ls 
+zip
+zip -r emacs_el.zip lisp/ init.el 
+ls 
+open . 
+git init 
+ls 
+ls -a 
+cd  .git/ 
+ls 
+cd ..
+git add . 
+git commit -m "初始提交：备份我的 Emacs 配置"
+git remote add origin https://github.com/gtravs/my_emacs.git 
+git branch -M main
+git push -u origin main 
+git remote add origin git@github.com:gtravs/my_emacs.git
+ls 
+ls -al ~/.ssh
+ssh-keygen -t ed25519 -C "2397247075@qq.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+open ~/.ssh/id_ed25519.pub 
+code  ~/.ssh/id_ed25519.pub 
+git remote -v
+git remote set-url origin git@github.com:gtravs/my_emacs.git
+git push -u origin main
+git push -u origin main
+ls 
+nc -l 1235
+envclash
+nc -v google.com:443
+nc -v google.com 443
+nc -v baidu.com 443
+clear 
+ls 
+chrome 
+open https://www.google.com
+gcc -c test1.c  test && test 
+ls 
+rm -rf test1.o  test1 
+ls 
+gcc -h
+gcc --help
+gcc test1.c  -o test1 && test1
+ls 
+./test1 
+gcc test1.c  -o test1 && ./test1
+gcc test1.c  -o test1 && ./test1
+curl ifconfig.me

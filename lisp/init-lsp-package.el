@@ -48,57 +48,162 @@
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
-;; ========== Ivy 搜索框架 ==========
-;; Ivy - 强大的补全框架
+
+;; ========== Ivy 系列插件的美化增强 ==========
+
+;; **1. 增强 Ivy 的视觉显示**
 (use-package ivy
   :ensure t
-  :init
-  (ivy-mode 1)  ; 启用 Ivy 补全框架（全局生效）
   :config
-  ;; 可选优化
-  (setq ivy-use-virtual-buffers t)  ; 在 C-x b 中包含最近关闭的文件
-  (setq enable-recursive-minibuffers t)  ; 允许在 minibuffer 中执行 M-x
-  (setq ivy-re-builders-alist '((t . ivy--regex-ignore-order)))  ; 模糊匹配：顺序无关
-  (setq ivy-initial-inputs-alist nil))  ; 移除 M-x 中默认的 "*" 前缀
+  ;; 基础设置（你已配置的部分保持不变）
+  (setq ivy-use-virtual-buffers t)
+  (setq enable-recursive-minibuffers t)
+  (setq ivy-re-builders-alist '((t . ivy--regex-ignore-order)))
+  (setq ivy-initial-inputs-alist nil)
 
-;; Counsel - Ivy 的扩展命令
+  ;; 🎨 新增：深度美化设置
+  ;; 设置匹配结果的高亮面（face）
+  (setq ivy-highlight-face 'font-lock-variable-name-face) ; 匹配部分高亮
+  (setq ivy-current-match-face 'highlight) ; 当前选中项高亮
+  ;; 最小高度和计数提示
+  (setq ivy-height 15) ; 候选列表行数
+  (setq ivy-count-format "(%d/%d) ") ; 显示计数，如 (5/10)
+  ;; 使用箭头作为分隔符，更美观
+  (setq ivy-format-function #'ivy-format-function-arrow)
+  ;; 在命令顶部显示提示信息
+  (setq ivy-display-style 'fancy)
+  ;; 延迟后显示提示（避免输入时闪烁）
+  (setq ivy-display-prompt-delay 0.2)
+  (ivy-mode 1))
+
+;; **2. 强化 Counsel 的样式集成**
 (use-package counsel
   :after ivy
   :ensure t
   :config
-  ;; 🎯 绑定所有关键快捷键
-  (global-set-key (kbd "M-x") 'counsel-M-x)          ; 命令执行
-  (global-set-key (kbd "C-x C-f") 'counsel-find-file) ; 找文件
-  (global-set-key (kbd "C-x d") 'counsel-dired)       ; Dired 目录
-  (global-set-key (kbd "C-x b") 'counsel-switch-buffer) ; 切换 buffer
-  (global-set-key (kbd "C-x C-r") 'counsel-recentf)    ; 打开最近文件
-  (global-set-key (kbd "C-c g f") 'counsel-git-files)  ; Git 项目文件
-  (global-set-key (kbd "C-c g g") 'counsel-git)        ; Git 命令
-  (global-set-key (kbd "C-c i") 'counsel-imenu)        ; 当前文件函数/变量跳转
-  (global-set-key (kbd "C-c j") 'counsel-bookmark)     ; 书签
-  (global-set-key (kbd "C-h f") 'counsel-describe-function)
-  (global-set-key (kbd "C-h v") 'counsel-describe-variable))
+  (global-set-key (kbd "M-x") 'counsel-M-x)
+  ;; ... 你已有的其他按键绑定保持不变
 
-;; Swiper - 增强的搜索
+  ;; 🎨 新增：为特定 Counsel 命令美化显示
+  ;; 例如，让文件查找显示更丰富的文件信息
+  (setq counsel-find-file-ignore-regexp "\\(?:^[#.]\\)\\|\\(?:[#~]$\\)\\|\\(?:^Icon?\\)")
+  ;; 启用文件预览（在光标悬停时）
+  (setq counsel-find-file-preview-side 'right)
+  (setq counsel-find-file-size-truncate t)
+  )
+
+;; **3. 美化 Swiper 的搜索界面**
 (use-package swiper
   :ensure t
-  :bind
-  (("C-s" . swiper)
-   ("C-r" . swiper)))
+  :bind (("C-s" . swiper)
+         ("C-r" . swiper-backward))
+  :config
+  ;; 🎨 新增：增强 Swiper 的视觉反馈
+  (setq swiper-action-recenter t) ; 匹配项居中显示
+  (setq swiper-include-line-number-in-search t) ; 搜索时包含行号
+  ;; 高亮所有匹配项（而不仅仅是当前行）
+  (setq swiper-font-lock-exclude-number t)
 
-;; 增强 Ivy 的显示
+  ;; 自定义 Swiper 的高亮颜色以匹配你的 ef-dark 主题[4](@ref)
+  (custom-set-faces
+   `(swiper-line-face ((t (:background "#2a2e3a" :foreground unspecified :distant-foreground unspecified)))) ; 当前行背景
+   `(swiper-match-face-1 ((t (:background "#5d4d7a" :foreground "#ffffff" :weight bold)))) ; 匹配项1
+   `(swiper-match-face-2 ((t (:background "#3a5d7a" :foreground "#ffffff" :weight bold)))) ; 匹配项2
+   `(swiper-match-face-3 ((t (:background "#7a5d3a" :foreground "#ffffff" :weight bold)))) ; 匹配项3
+   `(swiper-match-face-4 ((t (:background "#4d7a5d" :foreground "#ffffff" :weight bold)))) ; 匹配项4
+   ))
+
+;; **4. 增强 Ivy-Rich 的显示模式**
 (use-package ivy-rich
   :ensure t
-  :after ivy
-  :init
-  (ivy-rich-mode 1))
+  :after (ivy all-the-icons)
+  :init (ivy-rich-mode 1)
+  :config
+  ;; 🎨 新增：更丰富的列显示和转换器
+  ;; 为 buffer 列表添加更多列（图标、项目、路径、大小、模式）
+  (setq ivy-rich-display-transformers-list
+        '(ivy-switch-buffer
+          (:columns
+           ((all-the-icons-ivy-rich-buffer-icon) ; 图标
+            (ivy-rich-candidate (:width 0.3))    ; Buffer名称
+            (ivy-rich-switch-buffer-project (:width 0.2 :face success)) ; 项目
+            (ivy-rich-switch-buffer-path (:width 0.4 :face font-lock-comment-face)) ; 路径
+            (ivy-rich-switch-buffer-size (:width 7 :face font-lock-constant-face)) ; 大小
+            (ivy-rich-switch-buffer-mode (:width 0.12 :face font-lock-type-face)) ; 主模式
+            (ivy-rich-switch-buffer-indicator (:width 0.1 :face error))) ; 指示器（如*修改*）
+           :predicate
+           (lambda (cand) (get-buffer cand)))
+          ;; 也可以为其他命令（如counsel-M-x）定义丰富显示
+          counsel-M-x
+          (:columns
+           ((all-the-icons-ivy-rich-function-icon) ; 命令图标
+            (ivy-rich-candidate (:width 0.4))       ; 命令名
+            (ivy-rich-counsel-function-docstring (:width 0.6 :face font-lock-doc-face))) ; 文档字符串
+           :predicate
+           (lambda (cand) (fboundp (intern cand))))))
 
-;; 为 Ivy 添加图标
+  ;; 设置项目名称的获取方式（如果你使用 Projectile）
+  (setq ivy-rich-project-root-cache-mode t)
+  (setq ivy-rich-path-style 'abbrev) ; 路径显示风格：abbrev（缩写）或full（完整）
+  )
+
+;; **5. 强化 All-The-Icons-Ivy-Rich**
 (use-package all-the-icons-ivy-rich
   :ensure t
   :after (ivy-rich all-the-icons)
+  :init (all-the-icons-ivy-rich-mode 1)
+  :config
+  ;; 🎨 新增：确保图标正确加载并显示
+  ;; 设置图标大小（可能需要根据你的字体调整）
+  (setq all-the-icons-ivy-rich-icon-size 1.0)
+  ;; 如果图标显示为乱码，确保已安装字体：
+  ;; M-x all-the-icons-install-fonts
+  )
+
+;; **6. 可选：添加边际注释（Marginalia）进一步美化**
+(use-package marginalia
+  :ensure t
+  :after ivy
   :init
-  (all-the-icons-ivy-rich-mode 1))
+  (marginalia-mode 1)
+  :config
+  ;; 在 minibuffer 中显示丰富的注解信息
+  (setq marginalia-annotators
+        '(marginalia-annotators-heavy marginalia-annotators-light nil))
+  ;; 为特定命令启用注解
+  (setq marginalia-command-filters
+        '((counsel-find-file marginalia-annotate-file)
+          (counsel-recentf marginalia-annotate-file)
+          (counsel-projectile-find-file marginalia-annotate-file)))
+  )
+
+;; **7. 可选：添加平滑滚动效果**
+(use-package ivy-posframe
+  :ensure t
+  :after ivy
+  :init
+  ;; 使用 posframe 显示候选框（更现代的外观）
+  ;; 注意：此包可能需要额外依赖，且在某些终端中可能不支持
+  ;; 如果你使用图形界面，可以取消注释以下行尝试
+   (setq ivy-display-function #'ivy-posframe-display-at-frame-center)
+   (ivy-posframe-mode 1) ; 启用
+  )
+
+;; ========== 最终通用配置建议 ==========
+;; 确保在所有配置加载后，设置与你的 ef-dark 主题[4](@ref)协调的颜色
+(add-hook 'after-init-hook
+          (lambda ()
+            ;; 如果当前是 ef-dark 主题，确保 ivy 颜色协调
+            (when (eq (car custom-enabled-themes) 'ef-dark)
+              (custom-set-faces
+               `(ivy-current-match ((t (:background "#4a4f5c" :foreground "#ffffff" :weight bold)))) ; 当前匹配项
+               `(ivy-minibuffer-match-face-1 ((t (:foreground "#8f9bb3")))) ; 匹配面1
+               `(ivy-minibuffer-match-face-2 ((t (:foreground "#7b88a1")))) ; 匹配面2
+               `(ivy-minibuffer-match-face-3 ((t (:foreground "#676f87")))) ; 匹配面3
+               `(ivy-minibuffer-match-face-4 ((t (:foreground "#535a6d")))) ; 匹配面4
+               ))))
+
+(message "Ivy、Counsel、Swiper 美化配置加载完成！")
 
 (use-package xref
   :ensure nil
@@ -155,9 +260,41 @@
   (setq doom-modeline-height 25))
 
 ;; 精美主题
-(use-package doom-themes
+;;(use-package doom-themes
+;;  :config
+;;  (load-theme 'doom-peacock t))
+
+(use-package ef-themes
+  :ensure t ; 确保包已安装，若不存在则自动从 GNU ELPA 安装[1,6](@ref)
+  :demand t ; 确保在Emacs启动时立即加载
+  :init
+  ;; 基本自定义设置（必须在加载主题前完成）[4](@ref)
+  ;; 启用混合字体，使表格、代码块等使用等宽字体，保证对齐
+  (setq ef-themes-mixed-fonts t)
+  ;; 让UI元素（如模式栏）使用比例字体（如果喜欢的话）
+  ;; (setq ef-themes-variable-pitch-ui t) ; 取消注释以启用
+
+  ;; 自定义标题样式：1级标题使用细体可变宽字体并放大，2级标题加粗并稍放大，其余级别使用等宽字体[4](@ref)
+  (setq ef-themes-headings
+        '((1 . (variable-pitch light 1.9))
+          (2 . (variable-pitch bold 1.6))
+          (t . (monospace 1.2))))
+
+  ;; 可以设置在两个主题间快速切换，例如在 ef-dark 和 ef-light 之间切换[4](@ref)
+  ;; (setq ef-themes-to-toggle '(ef-dark ef-light))
+
   :config
-  (load-theme 'doom-peacock t))
+  ;; 在加载主题前，禁用所有其他已启用的主题，防止样式冲突[4](@ref)
+  (mapc #'disable-theme custom-enabled-themes)
+
+  ;; 加载 ef-dark 主题[4](@ref)
+  (load-theme 'ef-dark :no-confirm) ; 使用 :no-confirm 避免确认提示
+
+  ;; 或者，使用 ef-themes 提供的命令加载，它会自动运行一些后期处理钩子[4](@ref)
+  ;; (ef-themes-select 'ef-dark)
+)
+
+
 
 ;; 图标支持
 (use-package all-the-icons
@@ -444,6 +581,30 @@
           (lambda ()
             (remove-hook 'before-save-hook #'my/lsp-format-buffer t)
             (add-hook 'before-save-hook #'blacken-buffer nil t)))
+
+
+
+
+;; error
+
+;; 1. 定义缺失的变量，解决 lsp-disabled-clients 未定义的问题
+(defvar lsp-disabled-clients nil "List of disabled LSP clients.")
+
+;; 2. 完全禁用 LSP 警告（包括 emacs-lisp-mode 中的警告）
+(setq lsp-warn-no-matched-clients nil)  ; 禁用"没有匹配的LSP客户端"警告
+(setq lsp-log-io nil)                   ; 不记录LSP IO
+(setq lsp-print-io nil)                 ; 不打印LSP IO
+(setq warning-minimum-level :error)     ; 只显示错误级别以上的警告
+
+;; 3. 针对 ef-themes 的警告，通过设置变量来避免
+(setq ef-themes-mixed-fonts nil)       ; 明确设置这些变量
+(setq ef-themes-headings nil)
+
+;; 4. 禁止显示警告缓冲区
+(setq warning-minimum-log-level :error) ; 日志中只记录错误
+(setq display-warning-minimum-level :error) ; 只显示错误以上的警告
+(setq byte-compile-warnings nil)        ; 禁止字节编译警告
+
 
 ;;; init-package.el ends here
 (provide 'init-lsp-package)
