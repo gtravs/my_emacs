@@ -71,3 +71,14 @@ ls
 gcc test1.c  -o test1 && ./test1
 gcc test1.c  -o test1 && ./test1
 curl ifconfig.me
+open https://github.com/gtravs
+git status
+git add . 
+git  commit -m "更新ivy界面"
+git push
+open -a "Google Chrome" "https://www.github.com/gtravs"
+pwd 
+ls 
+clear 
+clear 
+fzf 

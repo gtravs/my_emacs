@@ -19,12 +19,42 @@
 (tool-bar-mode -1)              ; （熟练后可选）关闭 Tool bar
 (when (display-graphic-p) (toggle-scroll-bar -1)) ; 图形界面时关闭滚动条
 
+
 (setq display-line-numbers-type 'relative)  ; （可选）显示相对行号
 (add-to-list 'default-frame-alist '(width . 90)) ; （可选）设定启动图形界面时的初始 Frame 宽度（字符数）
 (add-to-list 'default-frame-alist '(height . 55)) ; （可选）设定启动图形界面时的初始 Frame 高度（字符数）
 (setq dired-auto-revert-buffer t)
 ;; 字体
 (set-frame-font "Hack Nerd Font-14" nil t)
+
+
+;; ========== Emacs 基础性能优化 ==========
+;; 禁用不必要的界面元素，这些虽不可见但可能消耗资源
+(setq inhibit-startup-screen t)    ; 禁用启动画面
+(menu-bar-mode -1)                 ; 禁用菜单栏（您可能已设置）
+(tool-bar-mode -1)                 ; 禁用工具栏（您可能已设置）
+;;(scroll-bar-mode -1)                ; 禁用滚动条（您可能已设置）
+
+;; 垃圾回收优化：提高触发GC的阈值，减少频繁的小规模GC
+(setq gc-cons-threshold 80000000)   ; 初始阈值设为80MB
+(setq gc-cons-percentage 0.1)       ; GC占用内存比例
+
+;; 在最小缓冲区激活时（如使用 Ivy 时），临时进一步提高 GC 阈值，使输入更流畅
+(defun my/minibuffer-setup-hook ()
+  (setq gc-cons-threshold 400000000)) ; 临时提升至400MB
+
+(defun my/minibuffer-exit-hook ()
+  (setq gc-cons-threshold 80000000)) ; 恢复为80MB
+
+(add-hook 'minibuffer-setup-hook #'my/minibuffer-setup-hook)
+(add-hook 'minibuffer-exit-hook #'my/minibuffer-exit-hook)
+
+;; 文件操作优化：禁用文件锁定和备份，这些在 macOS 上有时会引起延迟
+(setq create-lockfiles nil)         ; 禁用文件锁定
+(setq make-backup-files nil)        ; 禁用备份文件（您已设置）
+(setq auto-save-default nil)         ; 禁用自动保存（您已设置）
+
+
 
 
 ;; 启用 ANSI 颜色显示
@@ -200,6 +230,88 @@
 
 ;; 将函数绑定到 C-`
 (global-set-key (kbd "C-`") 'my-eshell-toggle)
+
+
+;; ========== 浏览器配置 ==========
+;; 配置 browse-url 使用 Google Chrome
+(use-package browse-url
+  :ensure nil
+  :config
+  ;; 检查 Google Chrome 是否可用
+  (defun my/has-chrome-p ()
+    "检查 Google Chrome 是否已安装"
+    (or (file-exists-p "/Applications/Google Chrome.app")
+        (file-exists-p "/Applications/Chrome.app")))
+
+  ;; 主函数：使用 Google Chrome 打开 URL
+  (defun my/browse-url-with-chrome (url &optional _)
+    "用 Google Chrome 打开 URL"
+    (if (my/has-chrome-p)
+        (progn
+          (message "正在用 Google Chrome 打开: %s" url)
+          (shell-command (format "open -a \"Google Chrome\" \"%s\"" url)))
+      (message "Google Chrome 未找到，使用默认浏览器")
+      (browse-url-default-browser url)))
+
+  ;; 设置浏览器函数
+  (setq browse-url-browser-function 'my/browse-url-with-chrome))
+
+;; 添加一些方便的功能
+(defun my/browse-url-google-search (search-term)
+  "用 Google Chrome 搜索指定内容"
+  (interactive "s搜索内容: ")
+  (browse-url (concat "https://www.google.com/search?q="
+                     (url-hexify-string search-term))))
+
+(defun my/browse-url-current-url ()
+  "用 Google Chrome 打开当前光标处的 URL 或当前行的 URL"
+  (interactive)
+  (browse-url-at-point))
+
+;; 绑定快捷键
+(global-set-key (kbd "C-c b b") 'browse-url)                ; 打开 URL
+(global-set-key (kbd "C-c b g") 'my/browse-url-google-search) ; Google 搜索
+(global-set-key (kbd "C-c b u") 'my/browse-url-current-url)   ; 打开当前 URL
+(global-set-key (kbd "C-c b p") 'browse-url-at-point)         ; 打开光标处 URL
+
+;; 移除原来的麻烦快捷键（可选）
+(global-unset-key (kbd "M-S-@"))
+(global-set-key (kbd "C-;") 'mark-word)
+
+;; 绑定字体缩放快捷键
+(global-set-key (kbd "C-=") 'text-scale-increase)   ; 放大字体
+(global-set-key (kbd "C--") 'text-scale-decrease)    ; 缩小字体
+
+;; CUA 配置
+(cua-selection-mode 1) ; 启用CUA的选择模式，包括矩形编辑
+
+;; 检测CUA矩形模式
+(defun my-cua-smart-paste ()
+  "CUA模式下智能粘贴"
+  (interactive)
+  ;; 检查是否处于CUA矩形模式
+  (if (and cua-mode (cua-rectangle-mark-mode))
+      (progn
+        ;; 获取剪贴板内容
+        (let ((text (if (fboundp 'ns-get-pasteboard)
+                        (ns-get-pasteboard)
+                      (current-kill 0))))
+          ;; 执行矩形插入
+          (string-insert-rectangle (region-beginning) (region-end) text)
+          ;; 退出矩形模式
+          (cua--deactivate-rectangle)))
+    ;; 普通粘贴
+    (cua-paste)))
+
+;; 重新绑定CUA粘贴快捷键
+(define-key cua-global-keymap (kbd "s-v") 'my-cua-smart-paste)
+
+;; C-tab 快速切换
+;; 启用ido模式
+(ido-mode 1)
+;; 将C-tab绑定到ido-switch-buffer
+(global-set-key (kbd "C-<tab>") 'ido-switch-buffer)
+
 
 
 ;;; init-basic.el end
