@@ -85,11 +85,44 @@
 
 
 ;; 快速缩放窗口
-(global-set-key (kbd "C-c <") 'shrink-window-horizontally)   ; 缩小宽度
-(global-set-key (kbd "C-c >") 'enlarge-window-horizontally)   ; 增大宽度
-(global-set-key (kbd "C-c ^") 'enlarge-window)                ; 增大高度
-(global-set-key (kbd "C-c v") 'shrink-window)                 ; 缩小高度
+;; 启用 repeat-mode（Emacs 28及以上版本）
+(repeat-mode 1)
 
+;; 定义重复映射
+(defvar my-window-repeat-map
+  (let ((map (make-sparse-keymap)))
+    (define-key map (kbd "<") 'shrink-window-horizontally)
+    (define-key map (kbd ">") 'enlarge-window-horizontally)
+    (define-key map (kbd "^") 'enlarge-window)
+    (define-key map (kbd "v") 'shrink-window)
+    map))
+
+;; 定义可以重复的命令
+(defun my-shrink-window-horizontally-repeat ()
+  (interactive)
+  (shrink-window-horizontally 1)
+  (set-transient-map my-window-repeat-map t))
+
+(defun my-enlarge-window-horizontally-repeat ()
+  (interactive)
+  (enlarge-window-horizontally 1)
+  (set-transient-map my-window-repeat-map t))
+
+(defun my-enlarge-window-repeat ()
+  (interactive)
+  (enlarge-window 1)
+  (set-transient-map my-window-repeat-map t))
+
+(defun my-shrink-window-repeat ()
+  (interactive)
+  (shrink-window 1)
+  (set-transient-map my-window-repeat-map t))
+
+;; 重新绑定快捷键
+(global-set-key (kbd "C-c <") 'my-shrink-window-horizontally-repeat)
+(global-set-key (kbd "C-c >") 'my-enlarge-window-horizontally-repeat)
+(global-set-key (kbd "C-c ^") 'my-enlarge-window-repeat)
+(global-set-key (kbd "C-c v") 'my-shrink-window-repeat)
 
 (defun my-ultimate-kill-buffer-and-window ()
   "智能关闭当前缓冲区和窗口：

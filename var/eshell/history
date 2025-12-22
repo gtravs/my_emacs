@@ -86,3 +86,7 @@ cd .emacs.d/
 git add .
 git commit -m "增加CUA 配置和快速切换配置"
 git push
+cd .emacs.d/ 
+git add  . 
+git commit -m "多光标配置"
+git push 
