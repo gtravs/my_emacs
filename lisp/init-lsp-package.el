@@ -48,6 +48,9 @@
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
+;; md 
+(use-package flymd
+  :ensure t)
 
 ;; ========== Ivy 系列插件的美化增强 ==========
 

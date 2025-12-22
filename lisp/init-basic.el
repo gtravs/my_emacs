@@ -308,11 +308,11 @@
 
 ;; C-tab 快速切换
 ;; 启用ido模式
-(ido-mode 1)
+;;(ido-mode 1)
 ;; 将C-tab绑定到ido-switch-buffer
-(global-set-key (kbd "C-<tab>") 'ido-switch-buffer)
+;; (global-set-key (kbd "C-<tab>") 'ido-switch-buffer)
 
-
+(global-set-key (kbd "C-<tab>") 'ivy-switch-buffer)
 
 ;;; init-basic.el end
 (provide 'init-basic)
