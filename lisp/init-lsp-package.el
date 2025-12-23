@@ -1,4 +1,4 @@
-;;; init-lsp-package.el --- Emacs 初始化配置
+;;; init-lsp-package.el --- 扩展插件配置 -*- lexical-binding: t -*-
 ;;; Commentary:
 ;; 这个文件包含所有插件的配置
 ;;; Code:
@@ -32,11 +32,24 @@
 (setq use-package-verbose t)  ; 显示详细加载信息
 
 ;; ========== 核心设置 ==========
-;; 从 shell 导入环境变量（macOS 重要）
+;; 完整的 Emacs 配置示例
 (use-package exec-path-from-shell
-  :if (memq window-system '(mac ns x))
+  :ensure t
   :config
-  (exec-path-from-shell-initialize))
+  (when (daemonp)  ; 如果以 daemon 模式运行
+    (setq exec-path-from-shell-variables
+          '("PATH"
+            "MANPATH"
+            "CARGO_HOME"
+            "RUSTUP_HOME"
+            "JENV_ROOT"
+            "SSH_AUTH_SOCK"
+            "LANG"
+            "LC_CTYPE"))
+    
+    (setq exec-path-from-shell-shell-name "fish")
+    (exec-path-from-shell-initialize)))
+
 
 ;; 规范临时文件
 (use-package no-littering
@@ -291,7 +304,7 @@
   (mapc #'disable-theme custom-enabled-themes)
 
   ;; 加载 ef-dark 主题[4](@ref)
-  (load-theme 'ef-dark :no-confirm) ; 使用 :no-confirm 避免确认提示
+  (load-theme 'ef-elea-dark :no-confirm) ; 使用 :no-confirm 避免确认提示
 
   ;; 或者，使用 ef-themes 提供的命令加载，它会自动运行一些后期处理钩子[4](@ref)
   ;; (ef-themes-select 'ef-dark)

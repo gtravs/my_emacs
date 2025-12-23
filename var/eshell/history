@@ -90,3 +90,25 @@ cd .emacs.d/
 git add  . 
 git commit -m "多光标配置"
 git push 
+cd .emacs.d/ 
+git add . 
+git  commit -m  "连续调整窗口"
+git push 
+source ~/.config/fish/config.fish
+set -Ux PATH $HOME/.jenv/bin $PATH
+java -version
+java -version 
+source ~/.config/fish/config.fish 
+java .java-version 
+java -version 
+java -version 
+echo $PATH
+echo $PATH
+echo $PATH 
+echo $PATH 
+echo $SHELL 
+getenv "PATH"
+echo $PATH 
+echo $PATH 
+java -version
+echo $PATH 

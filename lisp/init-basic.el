@@ -1,4 +1,4 @@
-;;; init-basic.el
+;;; init-basic.el --- 基础配置设置 -*- lexical-binding: t -*-
 
 ;;; Commentary:
 ;; 这个文件为基本配置
