@@ -112,3 +112,11 @@ echo $PATH
 echo $PATH 
 java -version
 echo $PATH 
+java -version 
+echo $PATH 
+cd .emacs.d/ 
+git add . 
+git commit -m "更新同步fish shell env"
+git push 
+mvnw -Djdt.js.server.root\=/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/ -Djunit.runner.root\=/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/test-runner/ -Djunit.runner.fileName\=junit-platform-console-standalone.jar -Djava.debug.root\=/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles clean package -Djdt.download.url\=https\://www.eclipse.org/downloads/download.php\?file\=/jdtls/milestones/1.48.0/jdt-language-server-1.48.0-202506271502.tar.gz
+ls 

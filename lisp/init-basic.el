@@ -1,3 +1,4 @@
+
 ;;; init-basic.el --- 基础配置设置 -*- lexical-binding: t -*-
 
 ;;; Commentary:
@@ -346,6 +347,9 @@
 ;; (global-set-key (kbd "C-<tab>") 'ido-switch-buffer)
 
 (global-set-key (kbd "C-<tab>") 'ivy-switch-buffer)
+
+;; compile 快捷键
+(global-set-key (kbd "C-c c") 'compile)
 
 ;;; init-basic.el end
 (provide 'init-basic)

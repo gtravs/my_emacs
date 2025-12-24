@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+/Users/gtrav/.emacs.d/var/lsp-java/workspace/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
+4001856684.index
+1234203502.index

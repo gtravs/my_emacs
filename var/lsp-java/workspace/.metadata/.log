@@ -1,0 +1,2581 @@
+!SESSION 2025-12-23 17:45:16.039 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.9
+java.vendor=Homebrew
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=zh_CN_#Hans
+Framework arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
+Command-line arguments:  -data /Users/gtrav/.emacs.d/var/lsp-java/workspace/ --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.284
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.300
+!MESSAGE Started org.eclipse.buildship.core 11ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.300
+!MESSAGE Started org.eclipse.m2e.core 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.366
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.379
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.380
+!MESSAGE Initializing Java Language Server 1.48.0.202506271502
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.598
+!MESSAGE ProjectRegistryRefreshJob finished 297ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.619
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/com.microsoft.java.test.plugin-0.28.0.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.620
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/com.microsoft.jdtls.ext.core-0.5.1.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.621
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/dg.jdt.ls.decompiler.cfr-0.0.2-201802221740.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.621
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/dg.jdt.ls.decompiler.common-0.0.2-201802221740.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.622
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/dg.jdt.ls.decompiler.fernflower-0.0.2-201802221740.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.622
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/dg.jdt.ls.decompiler.procyon-0.0.2-201802221740.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.624
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/io.projectreactor.reactor-core.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.625
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/java.debug.plugin.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.626
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/jdt-ls-commons.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.626
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/jdt-ls-extension.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.627
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.apiguardian_1.1.0.v20190826-0900.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.628
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.eclipse.jdt.junit4.runtime_1.1.1200.v20200214-0716.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.628
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.eclipse.jdt.junit5.runtime_1.0.900.v20200513-0617.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.629
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.jupiter.api_5.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.630
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.jupiter.engine_5.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.631
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.jupiter.migrationsupport_5.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.632
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.jupiter.params_5.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.633
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.platform.commons_1.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.634
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.platform.engine_1.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.635
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.platform.launcher_1.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.635
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.platform.runner_1.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.636
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.platform.suite.api_1.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.636
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.vintage.engine_5.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.637
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.opentest4j_1.2.0.v20190826-0900.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.637
+!MESSAGE Installed reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.reactivestreams.reactive-streams.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.641
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.platform.engine_1.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.645
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.eclipse.jdt.junit5.runtime_1.0.900.v20200513-0617.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.653
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/dg.jdt.ls.decompiler.common-0.0.2-201802221740.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.654
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.jupiter.params_5.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.654
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.jupiter.migrationsupport_5.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.654
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.platform.commons_1.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.663
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/jdt-ls-extension.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.664
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/io.projectreactor.reactor-core.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.664
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.vintage.engine_5.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.673
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/com.microsoft.java.test.plugin-0.28.0.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.674
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.platform.launcher_1.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.674
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/jdt-ls-commons.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.681
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/dg.jdt.ls.decompiler.cfr-0.0.2-201802221740.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.687
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/dg.jdt.ls.decompiler.procyon-0.0.2-201802221740.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.687
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.platform.suite.api_1.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.687
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.jupiter.engine_5.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.688
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.jupiter.api_5.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.688
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.reactivestreams.reactive-streams.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.688
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.eclipse.jdt.junit4.runtime_1.1.1200.v20200214-0716.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.688
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.apiguardian_1.1.0.v20190826-0900.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.689
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.junit.platform.runner_1.6.0.v20200203-2009.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.695
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/dg.jdt.ls.decompiler.fernflower-0.0.2-201802221740.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.702
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/java.debug.plugin.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.702
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/org.opentest4j_1.2.0.v20190826-0900.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.708
+!MESSAGE Started reference:file:/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles/com.microsoft.jdtls.ext.core-0.5.1.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.710
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.710
+!MESSAGE Non-Static Commands: [java.project.import, java.project.changeImportedProjects, java.navigate.openTypeHierarchy, java.project.resolveStackTraceLocation, java.edit.handlePasteEvent, java.edit.stringFormatting, java.project.getSettings, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.vm.getAllInstalls, java.edit.organizeImports, java.project.refreshDiagnostics, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.updateSettings, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.project.resolveText, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.smartSemicolonDetection, java.project.updateSourceAttachment, java.project.updateClassPaths, java.decompile, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.updateJdk, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.710
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.711
+!MESSAGE Non-Static Commands: [sts.java.addClasspathListener, sts.java.removeClasspathListener]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.711
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.711
+!MESSAGE Non-Static Commands: [sts.java.javadoc]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.711
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.711
+!MESSAGE Non-Static Commands: [sts.java.type]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.711
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.711
+!MESSAGE Non-Static Commands: [sts.java.javadocHoverLink]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.711
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.712
+!MESSAGE Non-Static Commands: [sts.java.location]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.712
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.712
+!MESSAGE Non-Static Commands: [sts.java.search.packages, sts.java.search.types]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.712
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.712
+!MESSAGE Non-Static Commands: [sts.java.hierarchy.supertypes, sts.java.hierarchy.subtypes]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.712
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.712
+!MESSAGE Non-Static Commands: [vscode.java.test.search.codelens, vscode.java.test.search.items.all, vscode.java.test.search.location, vscode.java.test.search.items, vscode.java.test.get.testpath, vscode.java.test.junit.argument]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.713
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.713
+!MESSAGE Non-Static Commands: [vscode.java.checkProjectSettings, vscode.java.isOnClasspath, vscode.java.fetchUsageData, vscode.java.validateLaunchConfig, vscode.java.resolveInlineVariables, vscode.java.resolveClassFilters, vscode.java.resolveMainMethod, vscode.java.resolveClasspath, vscode.java.resolveBuildFiles, vscode.java.resolveMainClass, vscode.java.updateDebugSettings, vscode.java.resolveSourceUri, vscode.java.fetchPlatformSettings, vscode.java.buildWorkspace, vscode.java.startDebugSession, vscode.java.inferLaunchCommandLength, vscode.java.resolveElementAtSelection, vscode.java.resolveJavaExecutable]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.713
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.713
+!MESSAGE Non-Static Commands: [java.project.list, java.getPackageData, java.resolvePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.731
+!MESSAGE RepositoryRegistryUpdateJob finished 13ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.738
+!MESSAGE Workspace initialized in 20ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.767
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.767
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.777
+!MESSAGE Try to create an invisible project for the workspace /Users/gtrav/Sec/Code/Java/study
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.778
+!MESSAGE Creating the Java project study_7bcbc635
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.789
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.789
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.883
+!MESSAGE Default VM Install changed from  null to 1766483117878-/opt/homebrew/Cellar/openjdk@21/21.0.9/libexec/openjdk.jdk/Contents/Home
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.894
+!MESSAGE Finished creating the Java project study_7bcbc635
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:17.896
+!MESSAGE Successfully created a workspace invisible project study_7bcbc635
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:18.529
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:18.819
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:18.906
+!MESSAGE >> Updating classpath for project study_7bcbc635
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:19.443
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:19.445
+!MESSAGE 1 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:19.447
+!MESSAGE Validated 1. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:26.166
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:26.596
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:26.596
+!MESSAGE 1 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:26.597
+!MESSAGE Validated 1. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:42.367
+!MESSAGE Reconciled 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:42.798
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:42.798
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:42.799
+!MESSAGE Validated 1. Took 26 ms
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2025-12-23 17:45:42.961
+!MESSAGE Error computing hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "String.length()" because "typeSignature" is null
+	at org.eclipse.jdt.internal.compiler.parser.TypeConverter.createTypeReference(TypeConverter.java:129)
+	at org.eclipse.jdt.internal.core.BinaryTypeConverter.createTypeReference(BinaryTypeConverter.java:348)
+	at org.eclipse.jdt.internal.core.BinaryTypeConverter.convert(BinaryTypeConverter.java:200)
+	at org.eclipse.jdt.internal.core.BinaryTypeConverter.convert(BinaryTypeConverter.java:312)
+	at org.eclipse.jdt.internal.core.BinaryTypeConverter.buildTypeDeclaration(BinaryTypeConverter.java:99)
+	at org.eclipse.jdt.internal.codeassist.SelectionEngine.selectType(SelectionEngine.java:1591)
+	at org.eclipse.jdt.internal.core.NamedMember.resolveType(NamedMember.java:319)
+	at org.eclipse.jdt.internal.core.NamedMember.resolveType(NamedMember.java:261)
+	at org.eclipse.jdt.internal.ui.viewsupport.CoreJavaElementLinks.resolveType(CoreJavaElementLinks.java:416)
+	at org.eclipse.jdt.internal.ui.viewsupport.CoreJavaElementLinks.parseURI(CoreJavaElementLinks.java:196)
+	at org.eclipse.jdt.ls.core.internal.javadoc.JavadocContentAccess2$JdtLsJavadocAccessImpl.createLinkURIHelper(JavadocContentAccess2.java:522)
+	at org.eclipse.jdt.ls.core.internal.javadoc.JavadocContentAccess2$JdtLsJavadocAccessImpl.createLinkURI(JavadocContentAccess2.java:517)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccessImpl.handleLink(CoreJavadocAccessImpl.java:1501)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccessImpl.handleInlineTagElement(CoreJavadocAccessImpl.java:949)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccessImpl.handleContentElements(CoreJavadocAccessImpl.java:777)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccessImpl.handleContentElements(CoreJavadocAccessImpl.java:735)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccessImpl.elementToHTML(CoreJavadocAccessImpl.java:354)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccessImpl.toHTML(CoreJavadocAccessImpl.java:164)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.javadoc2HTML(CoreJavadocAccess.java:435)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContentFromSource(CoreJavadocAccess.java:368)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContent(CoreJavadocAccess.java:229)
+	at org.eclipse.jdt.ls.core.internal.javadoc.JavadocContentAccess2.getMarkdownContentReader(JavadocContentAccess2.java:138)
+	at org.eclipse.jdt.ls.core.internal.HoverInfoProvider.computeJavadoc(HoverInfoProvider.java:308)
+	at org.eclipse.jdt.ls.core.internal.HoverInfoProvider.computeHover(HoverInfoProvider.java:149)
+	at org.eclipse.jdt.ls.core.internal.handlers.HoverHandler.computeHover(HoverHandler.java:57)
+	at org.eclipse.jdt.ls.core.internal.handlers.HoverHandler.hover(HoverHandler.java:43)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.lambda$5(JDTLanguageServer.java:666)
+	at org.eclipse.jdt.ls.core.internal.BaseJDTLanguageServer.lambda$0(BaseJDTLanguageServer.java:87)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:44.329
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:44.747
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:44.747
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:44.748
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:49.063
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:49.485
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:49.485
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:49.486
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:50.111
+!MESSAGE Reconciled 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:50.259
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:50.355
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:50.416
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:50.480
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:50.532
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:50.532
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:50.946
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:50.946
+!MESSAGE 3 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:50.947
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:52.129
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:52.556
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:52.557
+!MESSAGE 3 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:52.557
+!MESSAGE Validated 1. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:52.573
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:52.995
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:52.995
+!MESSAGE 3 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:52.996
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:53.524
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:53.940
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:54.099
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:54.192
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:54.552
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:54.677
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:54.971
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:54.972
+!MESSAGE 3 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:54.972
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:56.231
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:56.395
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:56.560
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:56.768
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:56.872
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:57.292
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:57.292
+!MESSAGE 3 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:57.293
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:57.430
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:57.536
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:57.849
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:57.850
+!MESSAGE 3 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:57.850
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:58.781
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:58.936
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:59.030
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:59.455
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:59.456
+!MESSAGE 2 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:59.456
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:59.734
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:45:59.855
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:00.143
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:00.144
+!MESSAGE 2 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:00.144
+!MESSAGE Validated 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:00.942
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:01.198
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:01.356
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:01.776
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:01.776
+!MESSAGE 3 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:01.777
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:02.289
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:02.712
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:02.712
+!MESSAGE 3 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:02.713
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:02.985
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:03.206
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:03.313
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:03.624
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:03.625
+!MESSAGE 2 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:03.627
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:04.100
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:04.230
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:04.402
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:04.596
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:04.719
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:05.136
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:05.138
+!MESSAGE 3 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:05.139
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:05.864
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:06.279
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:06.280
+!MESSAGE 3 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:06.280
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:06.896
+!MESSAGE Reconciled 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:07.312
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:07.313
+!MESSAGE 3 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:07.314
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:11.223
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:11.642
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:11.643
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:11.644
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:13.230
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:13.649
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:13.649
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:13.650
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:14.529
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:14.635
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:14.871
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:15.108
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:15.338
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:15.583
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:15.683
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:15.944
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:16.047
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:16.117
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:16.197
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:16.359
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:16.774
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:16.774
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:16.775
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:28.694
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:29.112
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:29.528
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:29.529
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:46:29.530
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:49:58.072
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:49:58.307
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:49:58.503
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:49:58.920
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:49:58.921
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:49:58.922
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:35.355
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:35.772
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:35.773
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:35.774
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:36.866
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:37.053
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:37.467
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:37.468
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:37.469
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:37.986
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:38.273
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:38.377
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:38.797
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:38.798
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:38.799
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:49.489
+!MESSAGE Reconciled 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:49.583
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:49.715
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:49.877
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:50.298
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:50.299
+!MESSAGE 3 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:50.299
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:51.126
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:51.464
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:51.565
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:51.700
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:51.810
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:52.121
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:52.122
+!MESSAGE 2 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:52.123
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:53.102
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:53.264
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:53.448
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:53.869
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:53.870
+!MESSAGE 2 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:53.871
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:54.574
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:54.761
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:55.180
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:55.181
+!MESSAGE 2 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:55.182
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:55.848
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:55.945
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:56.179
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:56.592
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:56.593
+!MESSAGE 2 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:56.594
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:56.742
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:57.162
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:57.163
+!MESSAGE 2 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:57.163
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:57.553
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:57.715
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:57.848
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:58.015
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:58.298
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:58.406
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:58.449
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:58.606
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:59.027
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:59.028
+!MESSAGE 2 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:59.030
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:51:59.660
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:00.079
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:00.081
+!MESSAGE 2 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:00.082
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:00.530
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:00.946
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:00.947
+!MESSAGE 1 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:00.947
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:17.794
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:18.208
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:18.209
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:18.209
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:18.762
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:18.857
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:19.026
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:19.315
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:19.472
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:19.883
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:19.886
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:19.886
+!MESSAGE Validated 1. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:20.223
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:20.418
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:20.829
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:20.830
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:20.830
+!MESSAGE Validated 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:21.381
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:21.478
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:21.563
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:21.670
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:21.742
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:22.158
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:22.159
+!MESSAGE 3 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:22.160
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:22.705
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:23.119
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:23.120
+!MESSAGE 1 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:23.121
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:23.339
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:23.441
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:23.615
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:23.660
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:24.032
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:24.033
+!MESSAGE 1 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:24.034
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:24.769
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:24.982
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:25.107
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:25.248
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:25.667
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:25.668
+!MESSAGE 1 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:25.669
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:26.110
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:26.528
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:26.629
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:26.946
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:26.947
+!MESSAGE 1 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:26.947
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:27.279
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:27.420
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:27.835
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:27.837
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:27.837
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:28.618
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:28.744
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:28.846
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:29.020
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:29.435
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:29.436
+!MESSAGE 3 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:29.437
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:29.835
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:30.256
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:30.257
+!MESSAGE 3 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:30.258
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:30.793
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:30.847
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:31.042
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:31.150
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:31.562
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:31.562
+!MESSAGE 2 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:31.563
+!MESSAGE Validated 1. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:31.762
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:31.862
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:32.181
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:32.182
+!MESSAGE 2 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:32.184
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:35.351
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:35.543
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:35.762
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:35.762
+!MESSAGE 3 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:35.763
+!MESSAGE Validated 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:36.220
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:36.335
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:36.480
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:36.899
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:36.899
+!MESSAGE 3 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:36.900
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:40.676
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:41.089
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:41.090
+!MESSAGE 1 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:41.090
+!MESSAGE Validated 1. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:43.090
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:43.251
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:43.422
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:43.580
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:43.805
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:43.908
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:44.104
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:44.517
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:44.519
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:44.520
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:45.322
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:45.739
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:45.740
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:45.741
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:46.359
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:46.490
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:46.561
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:46.618
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:46.669
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:46.721
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:46.721
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:46.824
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:47.241
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:47.242
+!MESSAGE 3 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:47.243
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:49.493
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:49.652
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:49.733
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:50.150
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:50.151
+!MESSAGE 2 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:50.151
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:52.211
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:52.630
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:52.631
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:52.632
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:53.359
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:53.777
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:53.778
+!MESSAGE 1 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:53.778
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:53.967
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:54.385
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:54.387
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:54.388
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:54.558
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:54.974
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:54.975
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:54.975
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:56.770
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:56.815
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:57.189
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:57.542
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:57.591
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:57.959
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:57.961
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:57.962
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:58.490
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:58.907
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:58.908
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:58.908
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:59.161
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:59.264
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:59.314
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:59.494
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:52:59.695
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:00.112
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:00.113
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:00.114
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:00.321
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:00.466
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:00.625
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:00.786
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:01.199
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:01.200
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:01.200
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:01.451
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:01.537
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:01.949
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:01.950
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:01.951
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:02.659
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:03.075
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:03.076
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:03.076
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:03.585
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:03.686
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:04.002
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:04.004
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:04.005
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:04.015
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:04.121
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:04.208
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:04.403
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:04.598
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:04.783
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:04.884
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:05.198
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:05.199
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:05.200
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:05.440
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:05.545
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:05.655
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:05.673
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:05.798
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:06.213
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:06.213
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:06.214
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:08.312
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:08.728
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:08.729
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:08.730
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:53:26.132
+!MESSAGE ClassFile contents request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:54:29.127
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:54:29.128
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:55:48.963
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:55:48.978
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:55:49.391
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:55:49.392
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:55:49.392
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:56:00.594
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-23 17:56:00.596
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:33:13.770
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:33:13.784
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:33:14.213
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:33:14.213
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:33:14.214
+!MESSAGE Validated 1. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:34:17.956
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:34:17.957
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:34:22.387
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:34:22.404
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:34:22.823
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:34:22.825
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:34:22.827
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:34:35.944
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:34:36.364
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:34:36.365
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:34:36.366
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:46.437
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:46.451
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:46.872
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:46.873
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:46.874
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:49.525
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:49.710
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:50.133
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:50.133
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:50.137
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:50.137
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:50.137
+!MESSAGE Validated 2. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:50.685
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:50.796
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:50.888
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:51.302
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:51.303
+!MESSAGE 3 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:51.304
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:51.481
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:51.778
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:51.949
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:52.231
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:52.397
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:52.815
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:52.816
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:52.818
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:52.918
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:53.233
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:53.234
+!MESSAGE 1 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:53.235
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:53.802
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:53.905
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:54.218
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:54.219
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:54.226
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:54.226
+!MESSAGE 1 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:54.226
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:54.257
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:54.670
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:54.671
+!MESSAGE 1 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:54.671
+!MESSAGE Validated 1. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:54.857
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:55.048
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:55.203
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:55.622
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:55.623
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:55.631
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:55.631
+!MESSAGE 1 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:55.631
+!MESSAGE Validated 2. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:55.797
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:56.217
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:56.219
+!MESSAGE 1 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:56.220
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:56.268
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:56.369
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:56.688
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:56.689
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:56.693
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:56.694
+!MESSAGE 1 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:56.694
+!MESSAGE Validated 2. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:56.913
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:57.288
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:57.699
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:57.700
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:57.701
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:58.172
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:58.228
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:58.273
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:58.299
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:58.351
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:58.473
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:58.473
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:58.490
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:58.511
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:58.527
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:58.559
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:58.560
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:58.564
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:58.569
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:58.574
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:58.579
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:58.581
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:58.998
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:59.000
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:59.008
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:59.008
+!MESSAGE 3 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:35:59.009
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:00.089
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:00.505
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:00.508
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:00.509
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:03.036
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:03.170
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:03.238
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:03.294
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:03.325
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:03.375
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:03.376
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:03.778
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:04.198
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:04.200
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:04.208
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:04.208
+!MESSAGE 3 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:04.209
+!MESSAGE Validated 2. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:04.482
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:04.673
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:04.774
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:05.084
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:05.138
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:05.503
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:05.504
+!MESSAGE 2 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:05.505
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:05.740
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:06.006
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:06.188
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:06.613
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:06.614
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:06.619
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:06.619
+!MESSAGE 2 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:06.619
+!MESSAGE Validated 2. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:08.334
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:08.754
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:08.755
+!MESSAGE 2 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:08.756
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:08.898
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:09.002
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:09.317
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:09.318
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:09.326
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:09.326
+!MESSAGE 2 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:09.327
+!MESSAGE Validated 2. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:09.582
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:09.999
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:10.000
+!MESSAGE 3 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:10.002
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:10.264
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:10.348
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:10.511
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:10.685
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:11.101
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:11.102
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:11.111
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:11.112
+!MESSAGE 3 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:11.112
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:12.239
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:12.445
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:12.865
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:12.865
+!MESSAGE 3 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:12.866
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:18.720
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:19.137
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:19.139
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:19.147
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:19.147
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:19.148
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:20.338
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:20.758
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:20.759
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:20.760
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:28.133
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:28.238
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:28.280
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:28.452
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:28.572
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:28.951
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:29.368
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:29.369
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:29.376
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:29.376
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:29.377
+!MESSAGE Validated 2. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:29.669
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:29.833
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:30.242
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:30.242
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:30.243
+!MESSAGE Validated 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:31.742
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:31.846
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:31.913
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:32.144
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:32.560
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:32.561
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:32.568
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:32.568
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:32.569
+!MESSAGE Validated 2. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:32.660
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:32.838
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:32.937
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:33.255
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:33.257
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:33.258
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:34.352
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:34.775
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:34.775
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:34.781
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:34.781
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:36:34.781
+!MESSAGE Validated 2. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:40:10.507
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:40:10.508
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:40:19.088
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:40:19.503
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:40:19.504
+!MESSAGE 1 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:40:19.504
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:40:20.205
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:40:20.628
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:40:20.628
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:40:20.633
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:40:20.633
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:40:20.633
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:46:26.517
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:46:26.533
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:46:26.952
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:46:26.954
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:46:26.955
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:47:06.130
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:47:06.131
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:47:18.240
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:47:18.253
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:47:18.673
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:47:18.674
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:47:18.679
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:47:18.680
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:47:18.680
+!MESSAGE Validated 2. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:47:38.340
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:47:38.340
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:47:52.535
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:47:52.942
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:47:53.354
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:47:53.354
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 10:47:53.355
+!MESSAGE Validated 1. Took 12 ms
+!SESSION 2025-12-24 11:09:53.674 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.9
+java.vendor=Homebrew
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=zh_CN_#Hans
+Framework arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
+Command-line arguments:  -data /Users/gtrav/.emacs.d/var/lsp-java/workspace/ --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-12-24 11:09:54.157
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.441
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.463
+!MESSAGE Started org.eclipse.buildship.core 15ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.464
+!MESSAGE Started org.eclipse.m2e.core 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.511
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.513
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.514
+!MESSAGE Initializing Java Language Server 1.48.0.202506271502
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.826
+!MESSAGE ProjectRegistryRefreshJob finished 361ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.859
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.859
+!MESSAGE Non-Static Commands: [java.project.import, java.project.changeImportedProjects, java.navigate.openTypeHierarchy, java.project.resolveStackTraceLocation, java.edit.handlePasteEvent, java.edit.stringFormatting, java.project.getSettings, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.vm.getAllInstalls, java.edit.organizeImports, java.project.refreshDiagnostics, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.updateSettings, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.project.resolveText, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.smartSemicolonDetection, java.project.updateSourceAttachment, java.project.updateClassPaths, java.decompile, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.updateJdk, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.860
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.860
+!MESSAGE Non-Static Commands: [vscode.java.test.search.codelens, vscode.java.test.search.items.all, vscode.java.test.search.location, vscode.java.test.search.items, vscode.java.test.get.testpath, vscode.java.test.junit.argument]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.860
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.860
+!MESSAGE Non-Static Commands: [java.project.list, java.getPackageData, java.resolvePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.860
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.860
+!MESSAGE Non-Static Commands: [vscode.java.checkProjectSettings, vscode.java.isOnClasspath, vscode.java.fetchUsageData, vscode.java.validateLaunchConfig, vscode.java.resolveInlineVariables, vscode.java.resolveClassFilters, vscode.java.resolveMainMethod, vscode.java.resolveClasspath, vscode.java.resolveBuildFiles, vscode.java.resolveMainClass, vscode.java.updateDebugSettings, vscode.java.resolveSourceUri, vscode.java.fetchPlatformSettings, vscode.java.buildWorkspace, vscode.java.startDebugSession, vscode.java.inferLaunchCommandLength, vscode.java.resolveElementAtSelection, vscode.java.resolveJavaExecutable]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.861
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.861
+!MESSAGE Non-Static Commands: [sts.java.addClasspathListener, sts.java.removeClasspathListener]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.861
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.861
+!MESSAGE Non-Static Commands: [sts.java.javadoc]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.861
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.861
+!MESSAGE Non-Static Commands: [sts.java.type]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.861
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.862
+!MESSAGE Non-Static Commands: [sts.java.javadocHoverLink]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.862
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.862
+!MESSAGE Non-Static Commands: [sts.java.location]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.862
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.862
+!MESSAGE Non-Static Commands: [sts.java.search.packages, sts.java.search.types]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.862
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.863
+!MESSAGE Non-Static Commands: [sts.java.hierarchy.supertypes, sts.java.hierarchy.subtypes]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.882
+!MESSAGE RepositoryRegistryUpdateJob finished 12ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.894
+!MESSAGE Workspace initialized in 25ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.913
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.914
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.958
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:54.959
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:55.340
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:55.972
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:55.974
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:09:55.976
+!MESSAGE Validated 1. Took 33 ms
+!SESSION 2025-12-24 11:11:28.874 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.9
+java.vendor=Homebrew
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=zh_CN_#Hans
+Framework arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
+Command-line arguments:  -data /Users/gtrav/.emacs.d/var/lsp-java/workspace/ --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-12-24 11:11:29.309
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:29.591
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:29.614
+!MESSAGE Started org.eclipse.buildship.core 16ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:29.614
+!MESSAGE Started org.eclipse.m2e.core 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:29.662
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:29.666
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:29.667
+!MESSAGE Initializing Java Language Server 1.48.0.202506271502
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:29.984
+!MESSAGE ProjectRegistryRefreshJob finished 370ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.017
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.017
+!MESSAGE Non-Static Commands: [java.project.import, java.project.changeImportedProjects, java.navigate.openTypeHierarchy, java.project.resolveStackTraceLocation, java.edit.handlePasteEvent, java.edit.stringFormatting, java.project.getSettings, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.vm.getAllInstalls, java.edit.organizeImports, java.project.refreshDiagnostics, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.updateSettings, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.project.resolveText, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.smartSemicolonDetection, java.project.updateSourceAttachment, java.project.updateClassPaths, java.decompile, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.updateJdk, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.017
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.017
+!MESSAGE Non-Static Commands: [vscode.java.test.search.codelens, vscode.java.test.search.items.all, vscode.java.test.search.location, vscode.java.test.search.items, vscode.java.test.get.testpath, vscode.java.test.junit.argument]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.018
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.018
+!MESSAGE Non-Static Commands: [java.project.list, java.getPackageData, java.resolvePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.018
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.018
+!MESSAGE Non-Static Commands: [vscode.java.checkProjectSettings, vscode.java.isOnClasspath, vscode.java.fetchUsageData, vscode.java.validateLaunchConfig, vscode.java.resolveInlineVariables, vscode.java.resolveClassFilters, vscode.java.resolveMainMethod, vscode.java.resolveClasspath, vscode.java.resolveBuildFiles, vscode.java.resolveMainClass, vscode.java.updateDebugSettings, vscode.java.resolveSourceUri, vscode.java.fetchPlatformSettings, vscode.java.buildWorkspace, vscode.java.startDebugSession, vscode.java.inferLaunchCommandLength, vscode.java.resolveElementAtSelection, vscode.java.resolveJavaExecutable]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.018
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.018
+!MESSAGE Non-Static Commands: [sts.java.addClasspathListener, sts.java.removeClasspathListener]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.019
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.019
+!MESSAGE Non-Static Commands: [sts.java.javadoc]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.019
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.019
+!MESSAGE Non-Static Commands: [sts.java.type]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.019
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.020
+!MESSAGE Non-Static Commands: [sts.java.javadocHoverLink]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.020
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.020
+!MESSAGE Non-Static Commands: [sts.java.location]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.020
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.020
+!MESSAGE Non-Static Commands: [sts.java.search.packages, sts.java.search.types]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.020
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.021
+!MESSAGE Non-Static Commands: [sts.java.hierarchy.supertypes, sts.java.hierarchy.subtypes]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.039
+!MESSAGE RepositoryRegistryUpdateJob finished 13ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.049
+!MESSAGE Workspace initialized in 23ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.080
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.081
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.126
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.126
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:30.503
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:31.136
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:31.137
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:31.138
+!MESSAGE Validated 1. Took 29 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:40.297
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:40.731
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:40.732
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:40.732
+!MESSAGE Validated 1. Took 29 ms
