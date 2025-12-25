@@ -454,6 +454,13 @@
   (when (executable-find "python3")
     (setq python-shell-interpreter "python3")))
 
+(use-package lsp-pyright
+  :ensure t
+  :custom (lsp-pyright-langserver-command "pyright") ;; or basedpyright
+  :hook (python-mode . (lambda ()
+                          (require 'lsp-pyright)
+                          (lsp))))  ; or lsp-deferred
+
 ;; 虚拟环境管理
 (use-package pyvenv
   :ensure t
@@ -758,5 +765,17 @@
   (eshell))             ; 打开 eshell
 
 (global-set-key (kbd "C-c e") 'my/eshell-always-right)  ; 绑定到 C-c e
+
+(use-package dap-mode
+  :after lsp-mode
+  :config
+  ;; 加载针对不同语言的调试工具
+  (require 'dap-cpptools)   ; 如果你用这个
+  ;; 或者
+  (require 'dap-gdb-lldb)  ; 通常用于 Rust/C/C++
+  (dap-mode 1)
+  (dap-ui-mode 1))
+
+
 ;;; init-package.el ends here
 (provide 'init-lsp-package)

@@ -1,9 +1,3 @@
-cd Sec/Pentest/Web_Operation/Web_Penetration/Info_Gathering/JsScan/JS-Analyser 
-python3 app.py 
-exit
-exit
-exit
-ls 
 exit
 exit
 exit
@@ -120,3 +114,15 @@ git commit -m "更新同步fish shell env"
 git push 
 mvnw -Djdt.js.server.root\=/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/ -Djunit.runner.root\=/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/test-runner/ -Djunit.runner.fileName\=junit-platform-console-standalone.jar -Djava.debug.root\=/Users/gtrav/.emacs.d/var/lsp-java/eclipse.jdt.ls/server/bundles clean package -Djdt.download.url\=https\://www.eclipse.org/downloads/download.php\?file\=/jdtls/milestones/1.48.0/jdt-language-server-1.48.0-202506271502.tar.gz
 ls 
+cd ..
+git add . 
+git commit  -m "更新Dired 扩展文件管理器配置"
+git push 
+nc 127.0.0.1 12345 
+nc 127.0.0.1 1235 
+nc 127.0.0.1 1235
+nc 127.0.0.1 1235
+git add . 
+git commit -m "更新eshell split"
+git push 
+python3 test.py 

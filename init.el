@@ -24,14 +24,15 @@
 			   dumb-jump ef-themes exec-path-from-shell
 			   fd-dired flycheck-rust flymd format-all
 			   go-mode imenu-list ivy-posframe lsp-java
-			   lsp-python-ms lsp-ui magit marginalia
-			   markdown-live-preview no-littering
-			   orderless org-plus-contrib prettier-js
-			   projectile-ripgrep pytest python-black
-			   python-mode pyvenv rjsx-mode rust-mode
-			   tree-sitter-langs treemacs-evil
-			   treemacs-projectile typescript-mode vertico
-			   vterm vue-mode yasnippet-snippets)))
+			   lsp-pyright lsp-python-ms lsp-ui magit
+			   marginalia markdown-live-preview
+			   no-littering orderless org-plus-contrib
+			   prettier-js projectile-ripgrep pytest
+			   python-black python-mode pyvenv realgud
+			   rjsx-mode rust-mode tree-sitter-langs
+			   treemacs-evil treemacs-projectile
+			   typescript-mode vertico vterm vue-mode
+			   yasnippet-snippets)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

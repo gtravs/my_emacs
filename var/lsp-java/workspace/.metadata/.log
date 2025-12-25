@@ -2579,3 +2579,142 @@ Command-line arguments:  -data /Users/gtrav/.emacs.d/var/lsp-java/workspace/ --a
 
 !ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 11:11:40.732
 !MESSAGE Validated 1. Took 29 ms
+!SESSION 2025-12-24 17:22:39.860 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.9
+java.vendor=Homebrew
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=zh_CN_#Hans
+Framework arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
+Command-line arguments:  -data /Users/gtrav/.emacs.d/var/lsp-java/workspace/ --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-12-24 17:22:40.393
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:40.737
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:40.759
+!MESSAGE Started org.eclipse.buildship.core 16ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:40.760
+!MESSAGE Started org.eclipse.m2e.core 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:40.814
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:40.814
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:40.816
+!MESSAGE Initializing Java Language Server 1.48.0.202506271502
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.070
+!MESSAGE ProjectRegistryRefreshJob finished 310ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.118
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.119
+!MESSAGE Non-Static Commands: [java.project.import, java.project.changeImportedProjects, java.navigate.openTypeHierarchy, java.project.resolveStackTraceLocation, java.edit.handlePasteEvent, java.edit.stringFormatting, java.project.getSettings, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.vm.getAllInstalls, java.edit.organizeImports, java.project.refreshDiagnostics, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.updateSettings, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.project.resolveText, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.smartSemicolonDetection, java.project.updateSourceAttachment, java.project.updateClassPaths, java.decompile, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.updateJdk, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.119
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.119
+!MESSAGE Non-Static Commands: [vscode.java.test.search.codelens, vscode.java.test.search.items.all, vscode.java.test.search.location, vscode.java.test.search.items, vscode.java.test.get.testpath, vscode.java.test.junit.argument]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.119
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.119
+!MESSAGE Non-Static Commands: [java.project.list, java.getPackageData, java.resolvePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.120
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.120
+!MESSAGE Non-Static Commands: [vscode.java.checkProjectSettings, vscode.java.isOnClasspath, vscode.java.fetchUsageData, vscode.java.validateLaunchConfig, vscode.java.resolveInlineVariables, vscode.java.resolveClassFilters, vscode.java.resolveMainMethod, vscode.java.resolveClasspath, vscode.java.resolveBuildFiles, vscode.java.resolveMainClass, vscode.java.updateDebugSettings, vscode.java.resolveSourceUri, vscode.java.fetchPlatformSettings, vscode.java.buildWorkspace, vscode.java.startDebugSession, vscode.java.inferLaunchCommandLength, vscode.java.resolveElementAtSelection, vscode.java.resolveJavaExecutable]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.120
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.120
+!MESSAGE Non-Static Commands: [sts.java.addClasspathListener, sts.java.removeClasspathListener]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.120
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.120
+!MESSAGE Non-Static Commands: [sts.java.javadoc]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.121
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.121
+!MESSAGE Non-Static Commands: [sts.java.type]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.121
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.121
+!MESSAGE Non-Static Commands: [sts.java.javadocHoverLink]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.121
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.121
+!MESSAGE Non-Static Commands: [sts.java.location]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.122
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.122
+!MESSAGE Non-Static Commands: [sts.java.search.packages, sts.java.search.types]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.122
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.122
+!MESSAGE Non-Static Commands: [sts.java.hierarchy.supertypes, sts.java.hierarchy.subtypes]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.141
+!MESSAGE RepositoryRegistryUpdateJob finished 13ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.151
+!MESSAGE Workspace initialized in 24ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.173
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.173
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.376
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.377
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:41.832
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:42.458
+!MESSAGE begin problem for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:42.459
+!MESSAGE 0 problems reported for /study1.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:22:42.460
+!MESSAGE Validated 1. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:23:18.503
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:23:18.929
+!MESSAGE begin problem for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:23:18.930
+!MESSAGE 0 problems reported for /study2.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-12-24 17:23:18.930
+!MESSAGE Validated 1. Took 21 ms
