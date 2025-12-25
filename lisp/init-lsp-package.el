@@ -713,16 +713,19 @@
 
 
 ;; 辅助函数：查找并切换到 Dired 缓冲区
+;; 改进的辅助函数：优先切换到当前目录的 Dired 缓冲区
 (defun switch-to-dired-buffer ()
-  "切换到第一个找到的 Dired 模式缓冲区。如果不存在，则打开当前目录的 Dired。"
+  "切换到当前目录的 Dired 缓冲区。如果不存在，则打开当前目录的 Dired。"
   (interactive)
-  (let ((dired-buffer (cl-loop for buf in (buffer-list)
-                               when (with-current-buffer buf
-                                      (derived-mode-p 'dired-mode))
-                               return buf)))
+  (let* ((current-dir default-directory)
+         (dired-buffer (cl-loop for buf in (buffer-list)
+                                when (with-current-buffer buf
+                                       (and (derived-mode-p 'dired-mode)
+                                            (equal default-directory current-dir)))
+                                return buf)))
     (if dired-buffer
         (switch-to-buffer dired-buffer)
-      (dired default-directory))))
+      (dired current-dir))))  ; 总是打开当前目录的 Dired
 
 ;; 定义函数：上下分割窗口并切换到 Dired 缓冲区（下方）
 (defun split-window-below-and-switch-to-dired ()
@@ -746,5 +749,14 @@
 (global-set-key (kbd "C-c 2") 'split-window-below-and-switch-to-dired)
 (global-set-key (kbd "C-c 3") 'split-window-right-and-switch-to-dired-left)
 
+;; eshell split
+(defun my/eshell-always-right ()
+  "总是在右侧新窗口打开 eshell。"
+  (interactive)
+  (split-window-right)  ; 垂直分割
+  (other-window 1)      ; 移到右侧窗口
+  (eshell))             ; 打开 eshell
+
+(global-set-key (kbd "C-c e") 'my/eshell-always-right)  ; 绑定到 C-c e
 ;;; init-package.el ends here
 (provide 'init-lsp-package)
