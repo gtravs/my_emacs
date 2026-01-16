@@ -353,6 +353,10 @@
   ;; 配置 flycheck 使用 LSP 诊断
   (setq flycheck-check-syntax-automatically '(save mode-enabled)))
 
+(use-package flycheck-rust
+  :ensure t
+  :hook (rust-mode . flycheck-rust-setup))
+
 ;; ========== LSP 配置 ==========
 ;; lsp-mode - 语言服务器协议支持
 (use-package lsp-mode
@@ -362,6 +366,7 @@
           . lsp-deferred))
   
   :config
+  (setq lsp-rust-analyzer-server-command '("rust-analyzer"))
   ;; 基本配置
   (setq lsp-keymap-prefix "C-c l")
   (setq lsp-headerline-breadcrumb-enable nil)
@@ -371,6 +376,14 @@
   (setq lsp-enable-on-type-formatting nil)
   (setq lsp-enable-code-action-on-save t)  ; 启用代码操作（如组织导入）
   (setq lsp-enable-snippet t)  ; 启用代码片段支持
+
+  
+    ;; 修复关键：添加 Rust 语言服务器配置
+  (lsp-register-client
+   (make-lsp-client :new-connection (lsp-stdio-connection "rust-analyzer")
+                    :major-modes '(rust-mode)
+                    :server-id 'rust-analyzer))
+
   
   ;; 诊断显示 - 使用 flycheck 而不是 lsp-ui
   (setq lsp-diagnostic-provider :none)  ; 不使用 lsp 的诊断，使用 flycheck
@@ -487,7 +500,8 @@
                        (subword-mode +1)))
   :config
   (setq rust-format-on-save t)
-  (setq rust-analyzer-server-command '("rust-analyzer")))
+  ;;; (setq rust-analyzer-server-command '("rust-analyzer"))
+  )
 
 ;; Cargo 集成
 (use-package cargo
@@ -632,7 +646,7 @@
 ;; Dired window 设置
 ;; 通用版本，支持任意窗口布局
 (defun dired-open-in-best-window ()
-  "在最佳窗口打开文件，支持任何窗口分割布局"
+  "在最佳窗口打开文件，支持任何窗口分割布局（修改后：无合适窗口时强制右侧分割）"
   (interactive)
   (let* ((file (dired-get-file-for-visit))
          (current (selected-window))
@@ -641,7 +655,6 @@
          (non-dired-windows nil)
          target-window
          (preferred-window-name "study2"))
-    
     ;; 收集窗口信息
     (dolist (win window-list)
       (unless (eq win current)
@@ -649,78 +662,79 @@
               (derived-mode-p 'dired-mode))
             (push win dired-windows)
           (push win non-dired-windows))))
-    
-    ;; 策略优先级：
-    ;; 1. 首先尝试按名称查找特定窗口
+    ;; 策略优先级：1. 按名称找窗口
     (setq target-window
           (cl-find-if (lambda (win)
                         (string-match preferred-window-name
                                      (buffer-name (window-buffer win))))
                       window-list))
-    
-    ;; 2. 查找相邻的右侧窗口（C-x 3分割时）
+    ;; 2. 右侧窗口（非 Dired）
     (when (not target-window)
       (setq target-window (window-in-direction 'right))
       (when (and target-window
                  (with-selected-window target-window
                    (derived-mode-p 'dired-mode)))
-        (setq target-window nil)))  ; 跳过Dired窗口
-    
-    ;; 3. 查找相邻的左侧窗口
+        (setq target-window nil)))
+    ;; 3. 左侧窗口（非 Dired）
     (when (not target-window)
       (setq target-window (window-in-direction 'left))
       (when (and target-window
                  (with-selected-window target-window
                    (derived-mode-p 'dired-mode)))
         (setq target-window nil)))
-    
-    ;; 4. 查找上方窗口（C-x 2分割时）
+    ;; 4. 上方窗口（非 Dired）
     (when (not target-window)
       (setq target-window (window-in-direction 'above))
       (when (and target-window
                  (with-selected-window target-window
                    (derived-mode-p 'dired-mode)))
         (setq target-window nil)))
-    
-    ;; 5. 查找下方窗口
+    ;; 5. 下方窗口（非 Dired）
     (when (not target-window)
       (setq target-window (window-in-direction 'below))
       (when (and target-window
                  (with-selected-window target-window
                    (derived-mode-p 'dired-mode)))
         (setq target-window nil)))
-    
-    ;; 6. 使用任何非Dired窗口
+    ;; 6. 任何非 Dired 窗口
     (when (not target-window)
       (setq target-window (car non-dired-windows)))
-    
     ;; 执行打开操作
     (if target-window
         (progn
           (select-window target-window)
           (find-file file)
           (select-window current))
-      ;; 没有合适窗口，根据当前窗口布局分割
-      (if (> (window-width) (* (window-height) 2))
-          ;; 宽窗口，垂直分割
-          (progn
-            (split-window-right)
-            (other-window 1)
-            (find-file file)
-            (other-window -1))
-        ;; 窄窗口，水平分割
-        (progn
-          (split-window-below)
-          (other-window 1)
-          (find-file file)
-          (other-window -1))))))
+      ;; 没有合适窗口 → 强制右侧分割（与 C-c 3 逻辑一致）
+      ;; 6. 没有合适窗口时：强制执行 "右侧分割" 且比例为 60% (左) / 40% (右)
+      ;; 布局目标：[ 文件/内容 (60%) | Dired (40%) ]
+      (progn
+	;; 1. 分割窗口 (左侧)
+	;; 计算左边窗口的大小 (60%)
+	(let* ((content-width (floor (* (frame-width) 0.6)))
+               ;; 注意：split-window-horizontally 传入正值，表示在左边切出这么大一块
+               ;; 传入负值表示在右边切出
+               (split-result (split-window-horizontally content-width)))
 
+	  ;; 2. 打开文件
+	  ;; 分割后，光标焦点默认在【左边】的新窗口
+	  ;; 直接在当前窗口（左边）打开选中的文件
+	  (find-file file)
+
+	  ;; 3. 处理光标位置 (可选)
+	  ;; 如果你希望打开后光标留在【右边】的 Dired 窗口，解开下面这行注释
+	  ;; (other-window 1)
+
+	  ;; 如果希望光标留在【左边】看文件，保持下面这行注释掉 (保持默认)
+	  ;; (other-window -1)
+	  ))
+
+;; --- 替换结束 ---
+      )))
 
 (define-key dired-mode-map (kbd "C-c o") 'dired-open-in-best-window)
 
 
-;; 辅助函数：查找并切换到 Dired 缓冲区
-;; 改进的辅助函数：优先切换到当前目录的 Dired 缓冲区
 (defun switch-to-dired-buffer ()
   "切换到当前目录的 Dired 缓冲区。如果不存在，则打开当前目录的 Dired。"
   (interactive)
@@ -732,30 +746,42 @@
                                 return buf)))
     (if dired-buffer
         (switch-to-buffer dired-buffer)
-      (dired current-dir))))  ; 总是打开当前目录的 Dired
+      (dired current-dir))))
 
-;; 定义函数：上下分割窗口并切换到 Dired 缓冲区（下方）
+;; 工具函数：计算窗口高度/宽度的 30%
+(defun window-size-30-percent (vertical-p)
+  "返回当前帧高度或宽度的 30%，用于窗口分割。
+VERTICAL-P 为 t 表示垂直分割（上下），否则为水平分割（左右）。"
+  (floor (* (if vertical-p
+                (frame-height)
+              (frame-width))
+            0.4)))
+
+;; 1. 上下分割：下方为 Dired（30% 高度）
+;; 效果：光标保留在上方内容窗口
 (defun split-window-below-and-switch-to-dired ()
-  "垂直分割窗口（上下布局），并将下方窗口切换到 Dired 缓冲区。"
+  "垂直分割窗口（上下布局），下方窗口为 Dired（占 30% 高度）。光标保留在上方。"
   (interactive)
-  (split-window-below)      ; 上下分割窗口
-  (other-window 1)          ; 切换到下方窗口
-  (switch-to-dired-buffer)  ; 切换到 Dired 缓冲区
-  (other-window -1))        ; 切换回上方窗口（原文件）
+  (let ((height-30 (window-size-30-percent t)))
+    (split-window-below (- height-30))
+    (other-window 1)          ; 跳到下方新窗口
+    (switch-to-dired-buffer)  ; 打开 Dired
+    (other-window -1)))       ; ✅ 关键：跳回上一个窗口（上方内容区）
 
-;; 定义函数：左右分割窗口并切换到 Dired 缓冲区（左侧）
-(defun split-window-right-and-switch-to-dired-left ()
-  "水平分割窗口（左右布局），并将左侧窗口切换到 Dired 缓冲区。"
+;; 2. 左右分割：右侧为 Dired（30% 宽度）
+;; 效果：光标保留在左侧内容窗口
+(defun split-window-right-and-switch-to-dired ()
+  "水平分割窗口（左右布局），右侧窗口为 Dired（占 30% 宽度）。光标保留在左侧。"
   (interactive)
-  (split-window-right)      ; 左右分割窗口
-  ;; 当前窗口是左侧窗口，直接切换到 Dired
-  (switch-to-dired-buffer)  ; 左侧窗口切换到 Dired
-  (other-window 1))         ; 切换到右侧窗口（原文件）
+  (let ((width-30 (window-size-30-percent nil)))
+    (split-window-right (- width-30)) ; 分割出右侧新窗口 (焦点仍在左侧)
+    (other-window 1)          ; ✅ 跳到右侧新窗口 (去放 Dired)
+    (switch-to-dired-buffer)  ; 打开 Dired
+    (other-window -1)))       ; ✅ 关键：跳回上一个窗口 (左侧内容区)
 
 ;; 绑定快捷键
-(global-set-key (kbd "C-c 2") 'split-window-below-and-switch-to-dired)
-(global-set-key (kbd "C-c 3") 'split-window-right-and-switch-to-dired-left)
-
+(global-set-key (kbd "C-c 2") #'split-window-below-and-switch-to-dired)
+(global-set-key (kbd "C-c 3") #'split-window-right-and-switch-to-dired)
 ;; eshell split
 (defun my/eshell-always-right ()
   "总是在右侧新窗口打开 eshell。"
